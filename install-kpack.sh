@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Create KinD cluster
-minikube create cluster
+minikube start
 
 # Most recent kpack release
 kubectl apply -f release-0.1.2.yaml

@@ -2,14 +2,14 @@
 
 # create secret to push to registry
 
-kubectl create secret docker-registry tutorial-registry-credentials \
-    --docker-username=$DH_USERNAME \
-    --docker-password=$DH_PASS \
-    --docker-server=$DH_REGISTRY \
-    --namespace default
+# kubectl create secret docker-registry tutorial-registry-credentials \
+#     --docker-username=$DH_USERNAME \
+#     --docker-password=$DH_PASS \
+#     --docker-server=$DH_REGISTRY \
+#     --namespace default
 
 # If you have a secret already made:  `kubectl apply -f secret.yaml`
-# kubectl apply -f secret.yaml
+kubectl apply -f secret.yaml
 
 # Apply that service account to the cluster
 
