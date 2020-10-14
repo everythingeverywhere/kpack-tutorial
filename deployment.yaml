@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kpack-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      kpack: web
+  template:
+    metadata:
+      labels:
+        kpack: web
+    spec:
+      containers:
+      - name: petclinic
+        image: tortillas/app
+      imagePullSecrets:
+      - name: tutorial-registry-credentials
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kpack-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    kpack: web
+  ports:
+  - port: 8080
+    targetPort: 8080
+    nodePort: 30001

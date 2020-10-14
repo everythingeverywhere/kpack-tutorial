@@ -1,0 +1,8 @@
+# Ignore kpack files
+kpack-0.1.2/
+
+# Ignore creds
+creds.sh
+
+# Ignore secret.yaml
+secret.yaml
