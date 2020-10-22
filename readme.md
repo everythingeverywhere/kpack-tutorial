@@ -1,4 +1,4 @@
-A quick run through kpack install and tutorial 
+A quick run through kpack [install](https://github.com/pivotal/kpack/blob/master/docs/install.md    ) and [tutorial](https://github.com/pivotal/kpack/blob/master/docs/tutorial.md)
 
 install kpack
 ```
