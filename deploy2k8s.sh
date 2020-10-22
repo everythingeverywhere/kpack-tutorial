@@ -1,12 +1,13 @@
 #!/bin/sh
 
-kubectl create deployment kpack-demo --image=tortillas/app          
-kubectl get deployments                                          
-kubectl get pods                                                 
-kubectl get events      
-kubectl config view                                              
+
+# Create deployment on Cluster
+kubectl create deployment kpack-demo --image=$DH_USERNAME/app          
+
+# Create the service                                 
 kubectl expose deployment kpack-demo --type=LoadBalancer --port=8080
-kubectl get services                                                
+                                                
+# On minikube, the LoadBalancer type makes the Service accessible using:                                                
 minikube service kpack-demo                                         
 
 
