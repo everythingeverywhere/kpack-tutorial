@@ -1,11 +1,11 @@
 apiVersion: kpack.io/v1alpha1
 kind: Image
 metadata:
-  name: tutorial-image
+  name: tutorial-image2
   namespace: default
 spec:
-  tag: index.docker.io/tortillas/app
-  serviceAccount: tutorial-service-account
+  tag: index.docker.io/tortillas/app1
+  serviceAccount: dockerhub-service-account
   builder:
     name: my-builder
     kind: Builder

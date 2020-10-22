@@ -11,4 +11,4 @@ spec:
   - image: gcr.io/paketo-buildpacks/dotnet-core
   - image: gcr.io/paketo-buildpacks/go
   - image: gcr.io/paketo-buildpacks/php
-  - image: gcr.io/paketo-buildpacks/nginx:latest
+  - image: gcr.io/paketo-buildpacks/nginx

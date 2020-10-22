@@ -7,4 +7,4 @@ spec:
   - name: pet-container
     image: index.docker.io/tortillas/app
   imagePullSecrets:
-  - name: tutorial-registry-credentials
+  - name: dockerhub-registry-credentials

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Create KinD cluster
+# Create a minikube cluster
 minikube start
 
 # Most recent kpack release

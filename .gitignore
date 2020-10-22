@@ -5,4 +5,4 @@ kpack-0.1.2/
 creds.sh
 
 # Ignore secret.yaml
-secret.yaml
+tutorial-build/secret.yaml

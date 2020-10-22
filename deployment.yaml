@@ -17,7 +17,7 @@ spec:
       - name: petclinic
         image: tortillas/app
       imagePullSecrets:
-      - name: tutorial-registry-credentials
+      - name: dockerhub-registry-credentials
 ---
 apiVersion: v1
 kind: Service

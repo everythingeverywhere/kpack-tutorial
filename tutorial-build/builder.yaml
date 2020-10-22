@@ -4,8 +4,8 @@ metadata:
   name: my-builder
   namespace: default
 spec:
-  serviceAccount: tutorial-service-account
-  tag: index.docker.io/tortillas/builder
+  serviceAccount: dockerhub-service-account
+  tag: index.docker.io/tortillas/builder1
   stack:
     name: base
     kind: ClusterStack
